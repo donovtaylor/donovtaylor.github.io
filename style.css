@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding-left:150px;
     padding-right: 150px;
-    background-color: #a2896e;
+    background-color: #4F772D;
     font-family: Helvetica, sans-serif;
 }
 
@@ -10,7 +10,9 @@ body {
     display: flex;
     padding-top: 140px;
     flex-direction: column;
-    background-color: rgb(131, 111, 73);
+    background-color: #90A955;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
 }
 
 .top-bar {
@@ -20,10 +22,13 @@ body {
     flex-direction: row;
     padding: 10px;
     margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     border-radius: 50px;
     height: 80px;
-    width: calc(100vw - 320px);
-    background-color: #5f5f5f;
+    width: calc(100vw - 340px);
+    background-color: #132A13;
+
 }
 
 .top-bar-btn {
@@ -33,15 +38,15 @@ body {
     width: 100px;
     height: 80px;
     border-radius: 50px;
-    background-color: #7f7f7f;
-    color: white;
+    background-color: #40672D;
+    color: black;
     font-size: 16px;
     cursor: pointer;
     margin-right: 10px;
 }
 
 .top-bar-btn.active {
-    background-color: #dfd378;
+    background-color: #ECF39E;
 }
 
 .top-bar-btn:hover {
@@ -70,18 +75,24 @@ a:focus{
 .inner-container {
     padding-left: 50px;
     padding-right: 50px;
+    padding-bottom: 50px;
     min-height: 400px;
-    background-color: #7b644c;
+    background-color: #31572C;
     color: white;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+
+    
 }
 
 .card {
     display: flex;
     padding: 10px;
     flex-direction: row;
-    background-color: #a29682;
-    color: rgb(59, 55, 55);
+    background-color: #ECF39E;
+    color: black;
     border-radius: 20px;
+    margin-bottom: 20px;
 }
 
 .card>h2 {
@@ -89,7 +100,7 @@ a:focus{
 }
 
 .desc {
-    border-left: 2px dotted rgb(137, 118, 94);
+    border-left: 3px dotted rgb(137, 118, 94);
     padding-left: 10px;
 }
 
@@ -103,8 +114,12 @@ img {
 }
 
 .bottom-bar {
-    min-height: 400px;
-    background-color: #1f1f1f;
+    min-height: 200px;
+    background-color: #132A13;
+    margin-top: -20px;
+
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
 }
 
 @media (max-width: 600px) {
@@ -117,7 +132,7 @@ img {
         padding-right: 0;
     }
     .top-bar {
-        width: calc(100vw - 40px);
+        width: calc(100vw - 60px);
     }
     .card {
         flex-direction: column;
