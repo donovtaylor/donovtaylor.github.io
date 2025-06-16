@@ -95,7 +95,7 @@ a:focus{
     margin-bottom: 20px;
 }
 
-.card>h2 {
+.card>h2, .card>img {
     padding-right: 10px;
 }
 
@@ -107,10 +107,6 @@ a:focus{
 img {
 
     border-radius: 20px;
-}
-
-.profile-photo {
-    margin-right: 10px;
 }
 
 .bottom-bar {
