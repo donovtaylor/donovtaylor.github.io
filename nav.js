@@ -1,3 +1,4 @@
+// highlight the active tab in the top bar based on the current URL
 function highlightActiveTab() {
     var top_bar = document.querySelector('.top-bar');
     if (top_bar) {
@@ -12,9 +13,14 @@ function highlightActiveTab() {
                 link.classList.remove('active');
             }
         });
+        // If no link is active, set the first link as active
+        if (!top_bar.querySelector('.active') && links.length > 0) {
+            links[0].classList.add('active');
+        }
     }
 }
 
+// dynamically load the navbar
 fetch("navbar.html")
   .then(response => response.text())
   .then(data => {
